@@ -35,7 +35,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 2.5rem;
+    padding: 1rem 2rem;
     background: #2e4430;
     border-bottom: 1px solid rgba(255,255,255,0.08);
   }
@@ -47,7 +47,7 @@
   }
 
   .logo-img {
-    height: 44px;
+    height: 32px;
     width: auto;
     display: block;
     flex-shrink: 0;
@@ -65,7 +65,7 @@
   }
 
   .hero-nav-links {
-    font-size: 0.8rem;
+    font-size: 14px;
     color: rgba(255,255,255,0.7);
     display: flex;
     gap: 0.4rem;
@@ -173,7 +173,7 @@
 
   .what-grid {
     display: grid;
-    grid-template-columns: 320px 1fr;
+    grid-template-columns: 420px 1fr;
     gap: 2.75rem;
     align-items: center;
     direction: ltr;
@@ -184,11 +184,20 @@
   }
 
   .what-illustration {
-    background: transparent;
-    border-radius: 20px;
+    background: rgba(58, 122, 82, 0.1);
+    border-radius: 12px;
     overflow: hidden;
-    border: none;
-    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+  }
+  .what-illustration img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
   }
 
   .what-text p {
@@ -222,7 +231,18 @@
     position: absolute;
     top: 1.2rem;
     right: 1.8rem;
-    color: var(--text-light);
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+    background: rgba(58, 122, 82, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    color: #3a7a52;
+  }
+  .svc-icon svg {
+    flex-shrink: 0;
   }
 
   .svc-card h3 {
@@ -333,6 +353,6 @@
     .what-grid { grid-template-columns: 1fr; }
     .services-grid { grid-template-columns: 1fr; }
     .page-section { padding: 2.5rem 1.25rem; }
-    .hero-nav { padding: 1rem 1.25rem; }
-    .hero-nav-links { font-size: 0.72rem; }
+    .hero-nav { padding: 0.85rem 1.25rem; }
+    .hero-nav-links { font-size: 13px; }
   }
