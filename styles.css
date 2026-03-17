@@ -76,14 +76,14 @@
 
   .hero-body {
     text-align: center;
-    padding: 2rem 2rem 1.2rem;
+    padding: 2.5rem 2rem 0.75rem;
   }
 
   .hero-name {
     font-size: 2rem;
     font-weight: 700;
     color: rgba(255,255,255,0.9);
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     margin-top: -1.2rem;
   }
 
@@ -96,18 +96,19 @@
   }
 
   .hero-subtitle {
-    font-size: 0.74rem;
+    font-size: 1rem;
     color: rgba(255,255,255,0.65);
     font-weight: 300;
     line-height: 1.75;
-    margin-bottom: 1.44rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
   }
 
   .hero-tagline-mobile {
     display: none;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: rgba(255,255,255,0.7);
-    margin-bottom: 1rem;
+    margin-bottom: 0.3rem;
   }
 
   .name-card { display: none; }
@@ -118,7 +119,8 @@
     display: flex;
     justify-content: center;
     gap: 0.9rem;
-    padding-bottom: 2.4rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1.25rem;
     flex-wrap: wrap;
   }
 
@@ -365,4 +367,8 @@
     .hero-nav-links { display: none; }
     .logo-img { height: 20px; }
     .hero-tagline-mobile { display: block; }
+    .hero-name { font-size: 1.5rem; }
+    .hero-body h1 { font-size: clamp(1.5rem, 5vw, 1.85rem); }
+    .hero-subtitle,
+    .hero-tagline-mobile { font-size: 0.95rem; }
   }
