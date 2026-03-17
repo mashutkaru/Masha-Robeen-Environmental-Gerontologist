@@ -33,6 +33,7 @@
 
   .hero-nav {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
@@ -100,6 +101,13 @@
     font-weight: 300;
     line-height: 1.75;
     margin-bottom: 1.44rem;
+  }
+
+  .hero-tagline-mobile {
+    display: none;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 1rem;
   }
 
   .name-card { display: none; }
@@ -354,5 +362,7 @@
     .services-grid { grid-template-columns: 1fr; }
     .page-section { padding: 2.5rem 1.25rem; }
     .hero-nav { padding: 0.85rem 1.25rem; }
-    .hero-nav-links { font-size: 13px; }
+    .hero-nav-links { display: none; }
+    .logo-img { height: 20px; }
+    .hero-tagline-mobile { display: block; }
   }
