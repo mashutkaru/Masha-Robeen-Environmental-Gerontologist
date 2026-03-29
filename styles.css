@@ -189,7 +189,12 @@
     margin-bottom: 1.25rem;
   }
 
+  .sec-heading-wrap--jiat .sec-heading-logo {
+    order: 0;
+  }
+
   .sec-heading-wrap--jiat .sec-heading {
+    order: 1;
     margin-bottom: 0;
     text-align: right;
   }
@@ -318,6 +323,7 @@
     row-gap: 0;
     align-items: start;
     direction: ltr;
+    unicode-bidi: isolate;
   }
 
   .about-me-photo {
