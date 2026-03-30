@@ -328,10 +328,10 @@
 
   .about-me-photo {
     grid-column: 1;
-    grid-row: 1 / -1;
+    grid-row: 2;
     position: relative;
-    width: fit-content;
-    max-width: 280px;
+    width: clamp(210px, 24vw, 250px);
+    max-width: 250px;
     align-self: start;
     border-radius: 12px;
     overflow: hidden;
@@ -343,8 +343,8 @@
 
   .about-me-photo img {
     display: block;
-    width: auto;
-    max-width: 280px;
+    width: 100%;
+    max-width: 250px;
     height: auto;
   }
 
@@ -370,6 +370,29 @@
   }
 
   .about-me-text p:last-child {
+    margin-bottom: 0;
+  }
+
+  .about-me-services-title {
+    margin-bottom: 0.9rem;
+  }
+
+  .about-me-services-list {
+    list-style: disc;
+    direction: rtl;
+    padding-right: 1.2rem;
+    padding-left: 0;
+    margin: 0 0 1.15rem 0;
+    color: var(--text-mid);
+  }
+
+  .about-me-services-list li {
+    font-size: 0.88rem;
+    line-height: 1.9;
+    margin-bottom: 0.55rem;
+  }
+
+  .about-me-services-list li:last-child {
     margin-bottom: 0;
   }
 
@@ -406,7 +429,7 @@
 
   /* ══ CONTACT ══ */
   .contact-section { background: var(--green-dark); }
-  .contact-section .sec-heading.center { color: #fff; }
+  .contact-section .sec-heading.center { color: #fff; white-space: nowrap; }
   .contact-sub {
     font-size: 0.86rem;
     color: rgba(255,255,255,0.6);
@@ -467,10 +490,11 @@
       grid-column: 1;
       grid-row: 2;
       width: 100%;
-      max-width: 260px;
+      max-width: 228px;
       margin-left: auto;
       margin-right: auto;
-      height: 268px;
+      margin-top: 0;
+      height: 240px;
       align-self: center;
     }
     .about-me-photo img {
@@ -491,6 +515,9 @@
 
     .services-section .services-sec-heading {
       text-align: center;
+    }
+    .contact-section .sec-heading.center {
+      white-space: normal;
     }
     .about-me-text {
       grid-column: 1;
