@@ -136,9 +136,9 @@
     text-decoration: none;
     transition: opacity 0.2s, transform 0.2s;
     cursor: pointer;
-    border: 1.5px solid rgba(255,255,255,0.35);
-    background: rgba(255,255,255,0.1);
-    color: #fff;
+    border: 1.5px solid rgba(0,0,0,0.12);
+    background: #fff;
+    color: var(--text);
   }
   .btn-pill:hover { opacity: 0.82; transform: translateY(-1px); }
   .btn-pill[href^="mailto:"] {
@@ -311,7 +311,7 @@
 
   /* ══ ABOUT ME ══ */
   .about-me-section {
-    background: var(--cream-light);
+    background: #f4f1ec;
     border-top: 1px solid var(--border);
   }
 
@@ -398,7 +398,7 @@
 
   /* ══ JAPAN-ISRAEL AGETECH ══ */
   .jiat-activity-section {
-    background: #f4f1eb;
+    background: #ffffff;
     border-top: 1px solid var(--border);
   }
 
@@ -456,17 +456,13 @@
     font-weight: 500;
     font-family: 'Heebo', sans-serif;
     text-decoration: none;
-    background: rgba(255,255,255,0.1);
-    border: 1.5px solid rgba(255,255,255,0.28);
-    color: #fff;
+    background: #fff;
+    border: 1.5px solid rgba(0,0,0,0.12);
+    color: var(--text);
     transition: opacity 0.2s, transform 0.2s;
   }
   .btn-contact:hover { opacity: 0.82; transform: translateY(-1px); }
-  .btn-contact[href^="mailto:"] {
-    background: #fff;
-    color: var(--text);
-    border-color: rgba(0,0,0,0.12);
-  }
+  .btn-contact[href^="mailto:"] { color: var(--text); }
 
   /* ══ FOOTER ══ */
   footer {
@@ -544,5 +540,15 @@
 
     .sec-heading-wrap--jiat .sec-heading {
       text-align: center;
+    }
+
+    .sec-heading.right {
+      text-align: center;
+    }
+
+    .contact-btns {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.7rem;
     }
   }
